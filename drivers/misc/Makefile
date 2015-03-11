@@ -79,3 +79,8 @@ obj-$(CONFIG_DM_VERITY)		+= dmverity_query.o
 ifeq ($(TIMA_ENABLED),1)
 obj-$(CONFIG_TIMA_LOG)		+= tima_debug_log.o
 endif
+
+# IrDA FPGA
+obj-$(CONFIG_SEC_FPGA_ICE40XX)  += ice40xx.o
+
+obj-$(CONFIG_UID_CPUTIME) += uid_cputime.o
